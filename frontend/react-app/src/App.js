@@ -9,6 +9,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Profile from './pages/Profile';
 import CreatorDashboard from './pages/CreatorDashboard';
+import Search from './pages/Search';
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/video/:id" element={<VideoPlayer />} />
+              <Route path="/search" element={<Search />} />
               <Route path="/upload" element={<Upload />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />

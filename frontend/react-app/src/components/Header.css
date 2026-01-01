@@ -17,12 +17,60 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  gap: 40px;
 }
 
 .logo h1 {
   font-size: 24px;
   font-weight: 700;
   color: #3ea6ff;
+  white-space: nowrap;
+}
+
+.search-form {
+  flex: 1;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  height: 40px;
+  background: #121212;
+  border: 1px solid #3f3f3f;
+  border-radius: 20px 0 0 20px;
+  padding: 0 16px;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #3ea6ff;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+.search-button {
+  height: 40px;
+  width: 64px;
+  background: #222;
+  border: 1px solid #3f3f3f;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.search-button:hover {
+  background: #3f3f3f;
 }
 
 .nav {
